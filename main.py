@@ -165,7 +165,7 @@ og = final = None
 castled = False
 mate = False
 
-DEPTH = 1
+DEPTH = 2
 run = True
 while run:
 
