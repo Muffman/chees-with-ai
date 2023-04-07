@@ -169,14 +169,14 @@ DEPTH = 2
 run = True
 while run:
 
-    # if turn == 'b':
-    #     ai_board = go_to_move(move_log, len(move_log))
-    #     val, new_board, move_log = minimax(
-    #         ai_board, DEPTH, float('-inf'), float('inf'), True, 'b', move_log)
-    #     print(val)
-    #     board.board = new_board.copy()
-    #     turn = change_turn(turn)
-    #     pygame.time.delay(100)
+    if turn == 'b':
+        ai_board = go_to_move(move_log, len(move_log))
+        val, new_board, move_log = minimax(
+            ai_board, DEPTH, float('-inf'), float('inf'), True, 'b', move_log)
+        print(val)
+        board.board = new_board.copy()
+        turn = change_turn(turn)
+        pygame.time.delay(100)
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
